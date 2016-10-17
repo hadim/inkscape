@@ -16,6 +16,7 @@ matrix:
 # Install deps
 install:
   - bash .travis/install-deps.sh
+  - bash download-gtest.sh
 
 # Build steps
 script:
