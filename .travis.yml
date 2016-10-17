@@ -27,4 +27,4 @@ script:
 # Run tests
 after_success:
   - make test
-  - cd ./bin/inkscape --version
+  - ./bin/inkscape --version
