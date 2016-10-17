@@ -21,7 +21,8 @@ install:
 # Build steps
 script:
   - mkdir build/ && cd build/
-  - cmake ..
+  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then cmake .. ; fi
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then cmake -DLDFLAGS=-L/usr/local/opt/gettext/lib -DCPPFLAGS=-I/usr/local/opt/gettext/include .. ; fi
   - make inkscape_version
   - make
 
