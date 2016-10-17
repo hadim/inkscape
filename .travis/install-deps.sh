@@ -2,8 +2,6 @@
 
 # Install dependencies
 
-set -ex
-
 if [ "$TRAVIS_OS_NAME" == "linux" ]; then
 
     sudo apt-get -qq update
