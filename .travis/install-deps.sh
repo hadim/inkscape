@@ -24,7 +24,7 @@ if [ "$TRAVIS_OS_NAME" == "osx" ]; then
     brew install cairo --with-glib
     brew install gtk+3 poppler python gdk-pixbuf gtkmm3 cairomm librsvg libsvg-cairo
     brew install gdk-pixbuf pango pangomm argyll-cms intltool popt libxslt libwpd libwpg
-    brew install libcroco libxml2
+    brew install libcroco libxml2 gsl
 
 fi
 
